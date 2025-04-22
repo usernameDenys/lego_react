@@ -1,20 +1,21 @@
-const Card = ({ src, cardTitle, category, price, dispo }) => {
-    return <article>
+import CardTemplate from "../features/CardTemplate";
 
-        <img
-            src={src}
-            alt={src}
-            width={200}
-            className=" aspect-3/2 object-cover rounded-lg w-auto mb-[20px]"
+const Card = () => {
+    const imageSrc = "https://www.lego.com/cdn/cs/set/assets/blt6cdf0b53146b5519/10294_Prod.png?format=webply&fit=bounds&quality=80&width=400&height=400&dpr=2";
+    const title = "Titanic";
+    const category = "Historique";
+    const price = 199.99;
+    const dispo = "Disponible";
+
+    return (
+        <CardTemplate
+            src={imageSrc}
+            cardTitle={title}
+            category={category}
+            price={price}
+            dispo={dispo}
         />
-        <h2>{cardTitle}</h2>
-        <a href="#">{category}</a>
-        <p>{price}</p>
-        <p>{dispo}</p>
-        <button>Ajouter</button>
-    </article>
-
-
+    );
 };
 
 export default Card;

@@ -1,14 +1,14 @@
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Card from "../components/Card";
+import Cards from "../components/Cards";
 
 
 const HomePage = () => (
 
     <div className='container mx-auto px-4'>
         <Header />
-        <Card />
+        <Cards />
         <Footer />
     </div>
 );

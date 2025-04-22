@@ -1,20 +1,36 @@
+import { useEffect, useState } from "react";
 import CardTemplate from "../features/CardTemplate";
+import { getCards } from "../features/cardApi";
 
 const Cards = () => {
-    const imageSrc = "https://www.lego.com/cdn/cs/set/assets/blt6cdf0b53146b5519/10294_Prod.png?format=webply&fit=bounds&quality=80&width=400&height=400&dpr=2";
-    const title = "Titanic";
-    const category = "Historique";
-    const price = 199.99;
-    const dispo = "Disponible";
+    const [cardInfo, setCardInfo] = useState([]);
+
+    useEffect(() => {
+        async function getData() {
+            const res = await getCards();
+            setCardInfo(res);
+        }
+        getData();
+
+    }, []);
 
     return (
-        <CardTemplate
-            src={imageSrc}
-            cardTitle={title}
-            category={category}
-            price={price}
-            dispo={dispo}
-        />
+        <div className="flex flex-wrap justify-center gap-10">
+            {cardInfo.map((card, index) => (
+                <article key={index} className="bg-white rounded-[2rem] w-[430px] h-[570px] p-[1rem] flex flex-col text-center shadow-lg">
+                    <CardTemplate
+                        src={card.imageSrc}
+                        cardTitle={card.title}
+                        category={card.category}
+                        price={card.price}
+                        dispo={card.dispo}
+                    />
+                </article>
+
+            ))}
+        </div>
+
+
     );
 };
 

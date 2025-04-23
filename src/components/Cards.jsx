@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CardTemplate from "../features/CardTemplate";
 import { getCards } from "../features/cardApi";
 
-const Cards = () => {
+const Cards = ({ handleAddToCart }) => {
     const [cardInfo, setCardInfo] = useState([]);
 
     useEffect(() => {
@@ -24,6 +24,7 @@ const Cards = () => {
                         category={card.category}
                         price={card.price}
                         dispo={card.dispo}
+                        handleClick={() => handleAddToCart(card.title)}
                     />
                 </article>
 

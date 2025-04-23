@@ -1,4 +1,5 @@
-const CardTemplate = ({ src, cardTitle, category, price, dispo }) => (
+const CardTemplate = ({ src, cardTitle, category, price, dispo, handleClick }) => (
+
     <>
         <img
             src={src}
@@ -10,7 +11,7 @@ const CardTemplate = ({ src, cardTitle, category, price, dispo }) => (
         <p className="mx-[0.5rem] my-2">{price}€</p>
 
         {dispo ? <p className="mx-[0.5rem] my-2">Disponible</p> : <p className="mx-[0.5rem] my-2">En rupture</p>}
-        <button className="mx-25 my-2 py-2 rounded-2xl text-white bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700">Ajouter</button>
+        <button onClick={handleClick} className="mx-25 my-2 py-2 rounded-2xl text-white bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700">Ajouter</button>
     </>
 );
 

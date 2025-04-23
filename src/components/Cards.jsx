@@ -17,7 +17,7 @@ const Cards = () => {
     return (
         <div className="flex flex-wrap justify-center gap-10">
             {cardInfo.map((card, index) => (
-                <article key={index} className="bg-white rounded-[2rem] w-[430px] h-[570px] p-[1rem] flex flex-col text-center shadow-lg">
+                <article key={index} className="bg-white rounded-[2rem] w-[350px] h-[570px] p-[1rem] flex flex-col text-center shadow-lg">
                     <CardTemplate
                         src={card.imageSrc}
                         cardTitle={card.title}

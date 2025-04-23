@@ -36,14 +36,14 @@
   },
   {
     "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt370b7e8cc1fcceb2/10333.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
-    "title": "The Lord of the Rings: Rivendell",
+    "title": "The Lord of the Rings",
     "category": "Fantaisie",
     "price": 499.99,
     "dispo": "Disponible"
   },
   {
     "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt94d23cfa7d9023b0/10327.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
-    "title": "Dune Atreides Royal Ornithopter",
+    "title": "Dune Ornithopter",
     "category": "Fantaisie",
     "price": 169.99,
     "dispo": "Disponible"

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import CardTemplate from "../features/CardTemplate";
 import { getCards } from "../features/cardApi";
+import ProductCard from "./ProductCard";
 
-const Cards = ({ handleAddToCart }) => {
+const ProductList = ({ itemOnCart, onUpdateItemsOnCart, handleAddToCart }) => {
     const [cardInfo, setCardInfo] = useState([]);
 
     useEffect(() => {
@@ -14,17 +14,23 @@ const Cards = ({ handleAddToCart }) => {
 
     }, []);
 
+
     return (
         <div className="flex flex-wrap justify-center gap-10">
             {cardInfo.map((card, index) => (
                 <article key={index} className="bg-white rounded-[2rem] w-[350px] h-[570px] p-[1rem] flex flex-col text-center shadow-lg">
-                    <CardTemplate
+                    <ProductCard
                         src={card.imageSrc}
                         cardTitle={card.title}
                         category={card.category}
                         price={card.price}
                         dispo={card.dispo}
-                        handleClick={() => handleAddToCart(card.title)}
+                        itemOnCart={itemOnCart}
+                        onUpdateItemsOnCart={onUpdateItemsOnCart}
+                        handleAddToCart={() => {
+                            onUpdateItemsOnCart([...itemOnCart, card.title]);
+                            handleAddToCart(card.title);
+                        }}
                     />
                 </article>
 
@@ -35,4 +41,4 @@ const Cards = ({ handleAddToCart }) => {
     );
 };
 
-export default Cards;
+export default ProductList;

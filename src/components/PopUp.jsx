@@ -1,6 +1,10 @@
-const PopUp = ({ showPopUp, closePopUp, product }) => {
+const PopUp = ({ showPopUp, onClosePopUp, product }) => {
 
     if (!showPopUp) return null;
+
+    const closePopUp = () => {
+        onClosePopUp(false)
+    }
 
     return (
         <div className="fixed top-8 right-5 bg-gray-200 shadow-xl rounded-xl p-10 z-40">

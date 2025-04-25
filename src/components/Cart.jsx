@@ -1,6 +1,6 @@
 import { IoClose } from "react-icons/io5";
 
-const Cart = ({ isCartOpen, setIsCartOpen }) => {
+const Cart = ({ isCartOpen, onCartOpen, itemOnCart }) => {
 
 
     return (
@@ -10,12 +10,17 @@ const Cart = ({ isCartOpen, setIsCartOpen }) => {
             }`}>
             <button
                 className="absolute top-4 right-4 text-2xl hover:text-red-600"
-                onClick={() => setIsCartOpen(false)}
+                onClick={() => onCartOpen(false)}
             >
                 <IoClose />
             </button>
             <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
-            <p>Your cart is currently empty....</p>
+            <ul>
+                {itemOnCart.map((item) => (
+                    <li>{item}</li>
+                ))}
+            </ul>
+            <button>Delete</button>
 
         </div>
 

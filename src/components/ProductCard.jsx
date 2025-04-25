@@ -1,8 +1,9 @@
-const ProductCard = ({ src, cardTitle, category, price, dispo, itemOnCart, onUpdateItemsOnCart, handleAddToCart }) => {
+const ProductCard = ({ src, cardTitle, category, price, dispo, itemOnCart, onUpdateItemsOnCart, handleAddToCart, onUpdateTotal, total }) => {
 
     const handleClick = () => {
         onUpdateItemsOnCart([...itemOnCart, cardTitle])
-        handleAddToCart(cardTitle);
+        onUpdateTotal(total + price)
+        handleAddToCart(cardTitle)
     }
 
     return <>

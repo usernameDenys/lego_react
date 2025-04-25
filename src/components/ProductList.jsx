@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getCards } from "../features/cardApi";
 import ProductCard from "./ProductCard";
 
-const ProductList = ({ itemOnCart, onUpdateItemsOnCart, handleAddToCart }) => {
+const ProductList = ({ itemOnCart, onUpdateItemsOnCart, handleAddToCart, total, onUpdateTotal }) => {
     const [cardInfo, setCardInfo] = useState([]);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const ProductList = ({ itemOnCart, onUpdateItemsOnCart, handleAddToCart }) => {
 
 
     return (
-        <div className="flex flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-10 mt-20">
             {cardInfo.map((card, index) => (
                 <article key={index} className="bg-white rounded-[2rem] w-[350px] h-[570px] p-[1rem] flex flex-col text-center shadow-lg">
                     <ProductCard
@@ -31,6 +31,8 @@ const ProductList = ({ itemOnCart, onUpdateItemsOnCart, handleAddToCart }) => {
                             onUpdateItemsOnCart([...itemOnCart, card.title]);
                             handleAddToCart(card.title);
                         }}
+                        total={total}
+                        onUpdateTotal={onUpdateTotal}
                     />
                 </article>
 

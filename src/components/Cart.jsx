@@ -20,7 +20,7 @@ const Cart = ({ isCartOpen, onCartOpen, itemOnCart, total }) => {
                     <li>{item} <button>Delete</button> </li>
                 ))}
             </ul>
-            {!total ? <p>Your shopping cart is empty</p> : <p>Your total: {total}</p>}
+            {!total ? <p>Your shopping cart is empty</p> : <p>Your total: {total}€</p>}
 
 
         </div>

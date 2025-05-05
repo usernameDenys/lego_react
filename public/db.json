@@ -1,0 +1,65 @@
+[
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt6cdf0b53146b5519/10294_Prod.png?format=webply&fit=bounds&quality=80&width=400&height=400&dpr=2",
+    "title": "Titanic",
+    "category": "Historique",
+    "price": 679.99,
+    "dispo": false
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/bltdd27a0cbc5886dd2/75429_Prod_en-gb.png?format=webply&fit=bounds&quality=60&width=400&height=400&dpr=2",
+    "title": "Republic Attack Cruiser",
+    "category": "Star Wars",
+    "price": 649.99,
+    "dispo": true
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt3349f56c6f192e18/75192_Prod.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "Millennium Falcon",
+    "category": "Star Wars",
+    "price": 849.99,
+    "dispo": true
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/bltdbe9230cce3804cf/75331.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "The Razor Crest",
+    "category": "Star Wars",
+    "price": 599.99,
+    "dispo": true
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt22104f90cf1009c9/10317.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "Land Rover Classic Defender",
+    "category": "Technic",
+    "price": 239.99,
+    "dispo": false
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt370b7e8cc1fcceb2/10333.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "The Lord of the Rings",
+    "category": "Fantaisie",
+    "price": 499.99,
+    "dispo": false
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt94d23cfa7d9023b0/10327.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "Dune Ornithopter",
+    "category": "Fantaisie",
+    "price": 169.99,
+    "dispo": true
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt490fcaeb0097ae2f/76968_Prod.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "T. rex Breakout",
+    "category": "Jurassic World",
+    "price": 99.99,
+    "dispo": true
+  },
+  {
+    "imageSrc": "https://www.lego.com/cdn/cs/set/assets/blt0e2b04c977a2dc2a/10307.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+    "title": "Eiffel Tower",
+    "category": "Historique",
+    "price": 629.99,
+    "dispo": true
+  }
+]
